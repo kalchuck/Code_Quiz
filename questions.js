@@ -30,14 +30,14 @@ var questions = [
         answer: "Washington DC"
     },
     {
-        title: "How many colours in ",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "How many colours in a Rainbow",
+        choices: [6, 8, 5, 7],
+        answer: 7
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "What is Coors",
+        choices: ["Beer", "Rum", "Whiskey", "Gin"],
+        answer: "Beer"
     },
     {
         title: "The condition in an if / else statement is enclosed within ____.",
