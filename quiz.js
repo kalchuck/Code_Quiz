@@ -148,6 +148,28 @@ submitEl.addEventListener("click", function(event) {
   submissionResponseEl.textContent = response;
 });
 
+
+// answer is correct or wrong
+var mouseEventsEl = document.querySelector("#click-events");
+
+function toggleDisplay(event) {
+    var value = event.target.value;
+    if(value === "keydown") {
+      mouseEventsEl.classList.add("hide");
+     }
+    else {
+      mouseEventsEl.classList.remove("hide");
+     
+    }
+  }
+
+function click(event) {
+    var target = event.target.textContent;
+    document.querySelector("#target").textContent = target;
+    
+  }
+
+  document.addEventListener("click", click);
 //make it responsive in html
 
 //when timer is done and/or all questions have been answered, show final score and create an input for the user to enter intials
