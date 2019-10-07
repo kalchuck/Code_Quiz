@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Code_quiz</title>
-<link href ="style.css" rel ="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<script src = "script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
 </head>
+
 <body>
-<h1>Mind!</h1>
-<form id = "quiz" name = "quiz">
-<p class = "questions">What is null in JavaScript?</p>
-<input id = "textbox" type = "text" name = "question1">
-<p class = "questions">Variable in JavaScript declared with which keyword?</p>
-<input type = "radio" id = "mc" name = "question2" value = "String"> String<br>
-<input type = "radio" id = "mc" name = "question2" value = "Var"> Var<br>
-<p class = "questions">A function can be assigned to a variable in JavaScript?</p>
-<input type = "radio" id = "mc" name = "question3" value = "Booleans"> True<br>
-<input type = "radio" id = "mc" name = "question3" value = "False"> False<br>
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-</form>
-<div id = "after_submit">
-<p id = "number_correct"></p>
-<p id = "message"></p>
-<img id = "picture">
-</div>
-</html>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Brain twisters</h1> <br>
+            <p class="lead">Click the start button below to begin the quiz!</p> <br>
+            <hr class="my-4">
+
+            <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start</a>
+        </div>
+        <div id="quiz">
+            <div id="question">Question</div>
+            <div id="answer1">Answer1</div>
+            <div id="answer2">Answer2</div>
+            <div id="answer3">Answer3</div>
+            <div id="answer4">Answer4</div>
+        </div>
+        <br>
+
+        <!-- <div id="select" class="btn btn-primary btn-med" href="#" role="button">Submit</div> -->
+        <div id="results"></div>
+
+        <!-- View Highscore - to the left top of page -->
+
+        <!-- <h3> High Score </h3> -->
+        <!-- Timer to the right side of page-->
+        <!-- <h4>Timer:</h4> -->
+
+    </div>
+
+    
+    </div>
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+
 </body>
-</hmtl>
+
+</html>
