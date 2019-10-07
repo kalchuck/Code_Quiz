@@ -3,7 +3,7 @@ body {
    }
    #quiz {
     margin-left: 10px;
-    background: #d2def2;
+    background: #cae6ee;
     padding: 10px 20px 10px 20px;
     width: 400px;
     border-radius: 20px;
@@ -21,7 +21,7 @@ body {
     padding-left: 5px;
    }
    #button {
-    background: green;
+    background: rgb(253, 98, 26);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -38,7 +38,7 @@ body {
    }
    #after_submit {
     visibility: hidden;
-    background: #ff5459;
+    background: #49b2f8;
     padding: 10px 20px 10px 20px;
     width: 400px;
     border-radius: 20px;
