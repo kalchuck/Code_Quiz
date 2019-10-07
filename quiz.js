@@ -178,3 +178,18 @@ function click(event) {
 // store questions as an array of objects in a separate js file
 // so you will need to reference questions.js
 //length of array will determine the length of play: 15 seconds per question so if i have 5 questions then the time will be 75
+
+
+// display completion message 
+
+/* var tagName = document.getElementById("select");
+
+if (tagName !== "h1" && tagName !== "h2" && tagName !== "p" && tagName !== "div") {
+  alert("please enter a valid tag");
+} else {
+  var tag = document.createElement(tagName);
+  tag.textContent = "Congraluations" + tagName;
+  document.body.appendChild(tag);
+}
+
+*/  
