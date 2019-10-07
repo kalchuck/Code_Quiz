@@ -107,12 +107,46 @@ var currentQuestionIndex = 0;
 //when submit is hit then it goes through a loop
 
 //need to build a high score page and a timer that starts at 75 seconds (increments, count++)
+var timeEl = document.querySelector(".time");
+var mainEl = document.getElementById("main");
 
+var secondsLeft = 75;
+
+function setTime() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " Timer";
+
+    if(secondsLeft === 0) {
+      clearInterval(timerInterval);
+      sendMessage();
+    }
+
+  }, 1000);
+}
+
+
+setTime();
 //needs a onclick event to start the quiz (make a button also) and then the questions will appear.  Need to have a click event for the answer button to show the next question
 //timer needs to start as soon as the question appears.  Make sure the timer is given a max amount of time for the user to click an answer and count downwards
 
 //start calculating the score incrementally when the user gets a right answer ; create an alert on the page that tells you if the answer is right or wrong
 //answering incorrectly results in a time penalty of 5 seconds from the total of seconds
+
+// Submit function
+
+var submitEl = document.querySelector("#select");
+var nameInput = document.querySelector("#name");
+var submissionResponseEl = document.querySelector("#response");
+
+submitEl.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  console.log(event);
+  
+  var response = "Thank you for your submission " + nameInput.value;
+  submissionResponseEl.textContent = response;
+});
 
 //make it responsive in html
 

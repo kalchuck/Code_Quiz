@@ -25,7 +25,10 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron">
+        <div class="timer">
+        <h1 class="time"></h1>
+        </div>
+        <div class="main">
             <h1 class="display-4">Brain twisters</h1> <br>
             <p class="lead">Click the start button below to begin the quiz!</p> <br>
             <hr class="my-4">
@@ -41,9 +44,14 @@
         </div>
         <br>
 
+        <form>
+        <input placeholder="initial" id="name" />
         <div id="select" class="btn btn-primary btn-med" href="#" role="button">Submit</div>
         <div id="results"></div>
-
+        <div>
+                <h4 id="response"></h4>
+        </div>
+        </form>
         <!-- View Highscore - to the left top of page -->
 
         <!-- <h3> High Score </h3> -->
