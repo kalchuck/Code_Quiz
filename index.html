@@ -5,65 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-
-
+    <link rel="stylesheet" href="style.css">
+    <title>Code Quiz</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="timer">
-        <h1 class="time"></h1>
-        </div>
-        <div class="main">
-            <h1 class="display-4">Brain twisters</h1> <br>
-            <p class="lead">Hit start to beign</p> <br>
-            <hr class="my-4">
-
-            <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start</a>
-        </div>
-        <div id="quiz">
-            <div id="question">Question</div>
-            <div id="answer1">Answer1</div>
-            <div id="answer2">Answer2</div>
-            <div id="answer3">Answer3</div>
-            <div id="answer4">Answer4</div>
-        </div>
-        <br>
-
-        <form>
-        <input placeholder="initial" id="name" />
-        <div id="select" class="btn btn-primary btn-med" href="#" role="button">Submit</div>
-        <div id="click-events" class="hide">
-                <div>
-                  <span id="target"></span>
+    <div class="quizContainer container-fluid well well-lg">
+        <div class="container card">
+            <div id="quiz" class="text-center">
+                <div class="card-header">
+                    <h2>Coding Quiz</h2>
                 </div>
-        <div>
-                <h4 id="response"></h4>
+                <div class="card-body">
+                    <p id="instructions">As a coding bootcamp student, I want to take a timed quiz
+                        on JavaScript fundamentals that stores high scores so I can gauge my progrees compared to my
+                        peers.</p>
+                    <h4 class="iTime">Time Remaining: 0</h4>
+                    <hr>
+                    <button type="button" class="btnColor btn btn-secondary" id="start">Start Quiz</button>
+                    <button type="button" class="btn btn-secondary" id="viewScores" onclick="viewAllScores()">View High
+                        Scores</button>
+                    <main class="questions-rendered"></main>
+                    <p id="choice-response"></p>
+                </div>
+                <div id="initialsDiv" class="text-center" style="display:none">
+                    Enter Initials: <input type="text" onfocus="this.value=''" id="myInitials" value="">
+                    <button type="button" class="btnColor btn btn-secondary" id="enterInitials"
+                        onclick="getInitials()">Submit</button>
+                </div>
+                <div id="scoresDiv" class="text-center" style="display:none">
+                    <button type="button" class="btn btn-info" id="goBack" onclick="startOver()">Go Back</button>
+                    <button type="button" class="btn btn-info" id="clearScores" onclick="clearScores()">Clear High
+                        Scores</button>
+                </div>
+            </div>
         </div>
-        </form>
-      
-
     </div>
-
-    
-    </div>
-    <script src="questions.js"></script>
-    <script src="quiz.js"></script>
-
 </body>
+<script src="questions.js"></script>
+<script src="quiz.js"></script>
 
 </html>

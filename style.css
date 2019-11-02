@@ -1,114 +1,23 @@
-body {
-    font-family: "Lato", sans-serif;
-   }
-   #quiz {
-        
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        background-color: #64b2f1;
-        color: white;
-        font-size: 1.5em;
-        line-height: 1.5;
-      
-   }
+.btnColor {
+    background-color: rgb(25, 40, 250)  !important;
+}
 
-   #question {
-       padding: 5px;
-       margin: 2px;
-       border: #f3f7f6
-       border-style: solid;
-       border-width: medium;
-   } 
-
-   #answer1 {
-    padding: 5px;
-    margin: 2px;
-    border: #f3f7f6
-    border-style: solid;
-    border-width: medium;
-   }
-
-   #answer2 {
-    padding: 5px;
-    margin: 2px;
-    border: #f3f7f6
-    border-style: solid;
-    border-width: medium;
-   }
-
-   #answer3 {
-    padding: 5px;
-    margin: 2px;
-    border: #f3f7f6
-    border-style: solid;
-    border-width: medium;
-   }
-   #answer4 {
-    padding: 5px;
-    margin: 2px;
-    border: #f3f7f6
-    border-style: solid;
-    border-width: medium;
-   }
-
-   input {
-    margin-bottom: 20px;
-    display: block;
-   }
-   #textbox {
-    height: 25px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    padding-left: 5px;
-   }
-   #button {
-    background: rgb(253, 98, 26);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+button {
+    background-color: rgb(25, 40, 250) ;
+    border-color: rgb(25, 40, 250) ;
     color: white;
-    font-size: 16px;
-    transition-duration: 0.5s;
-    margin-top: 15px;
-   }
-   #button:hover {
-    background: white;
-    border: 1px solid green;
-    color: black;
-    cursor: pointer;
-   }
-   #after_submit {
-    visibility: hidden;
-    background: #49b2f8;
-    padding: 10px 20px 10px 20px;
-    width: 400px;
-    border-radius: 20px;
-    float: left;
-    margin-left: 20px;
-    font-size: 30px;
-   }
-   #picture {
-    width: 375px;
-    height: 245px;
-   }
-   #mc {
-    display: inline;
-   }
+    border-radius: 10px;
+}
 
+#choice-response {
+    color: gray;    
+}
 
+#instructions {
+    color: dimgray;
+}
 
-   
 .container {
-    text-align: center;
-    margin: auto;
-    width: 900px;
-    
-    
-    }
-    .btn {
-        background: red;
-        
-      
-    }
+    margin-top: 10%;
+    padding: 10px;
+}
