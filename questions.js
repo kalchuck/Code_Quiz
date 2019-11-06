@@ -1,11 +1,11 @@
 var questions = [
     {
-        title: "Commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
+        title: "Which is the biggest animal",
+        choices: ["whale", "lion", "cheeta", "ant"],
         correctAnswer: "alerts"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
+        title: "which is",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         correctAnswer: "parentheses"
     },
